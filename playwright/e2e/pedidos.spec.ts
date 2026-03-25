@@ -190,7 +190,7 @@ test.describe('Consulta de Pedido', () => {
     await expect(statusBadge).toHaveClass(/text-amber-700/)
 
     const statusIcon = statusBadge.locator('svg')
-    await expect(statusIcon).toHaveClass(/lucide-clock-icon/)
+    await expect(statusIcon).toHaveClass(/lucide-clock/)
   })
 
   test('deve exibir mensagem quando o pedido não é encontrado', async ({ page }) => {
